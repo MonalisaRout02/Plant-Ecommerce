@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Text{
+    font-family: "Inter", sans-serif;
+    
+}
+.TextWhite{
+    font-family: "Inter", sans-serif;
+    color:#ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#BodyTextWhite{
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+#BodyText{
+    color: #595959;
+    font-size: 0.9rem;
+}
+#sideHeading{
+    color: #151515;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#sideHeadingMember{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#subHeading{
+    font-weight: 700;
+    font-size: 1.7rem;
+  
+}
+
+#subHeadingMember{
+    font-weight: 500;
+    font-size: 1.5rem;
+  
+}
+#BoldBodyText{
+    color: #151515;
+    font-size: 0.9rem;
+    font-weight: 500;
+    
 }

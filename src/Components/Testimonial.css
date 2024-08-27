@@ -1,0 +1,36 @@
+
+.slide {
+    transform: scale(0.5);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+    padding: 5px;
+  }
+  
+  
+  .activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 1; 
+  }
+  
+ 
+ 
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(50, 81, 70, 0.5); /* Optional: To make the arrows stand out */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
