@@ -16,7 +16,7 @@
     font-size: 0.9rem;
 }
 
-#BodyText{
+.BodyText{
     color: #595959;
     font-size: 0.9rem;
 }
@@ -47,4 +47,20 @@
     font-size: 0.9rem;
     font-weight: 500;
     
+}
+
+.responsive-map{
+    overflow: hidden;
+    height:0;
+    position :relative;
+    padding-bottom: 30%;
+}
+
+.responsive-map iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    position:absolute;
+    top:0;
+    left:0;
 }

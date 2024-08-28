@@ -5,10 +5,10 @@ const AboutUs = () => {
   return (
     <div className='flex justify-center '  style={{marginBottom:'155px'
     }}>
-      <div className='flex flex-col lg:flex-row lg:w-[75%] md:w-[75%] sm:w-[95%] lg:gap-12'  >
-        <div className='flex flex-col justify-between w-full lg:w-2/4 lg:mb-0 sm:mb-10 ' style={{height:'328px'}}>
-            <h1 className='Text' id='subHeading'>Know Our Story</h1>
-            <p className='Text  ' style={{ textAlign: 'justify'}} id='BodyText'> At PetalNest, we're dedicated to bringing the beauty at PetalNest, we bring the beauty and tranquility of nature into your home with a carefully curated selection of plants. Packaged in eco-friendly materials and accompanied by expert care tips, our plants help you create a serene, nature-inspired space. Whether you're an experienced plant lover or just starting out !</p>
+      <div className='flex flex-col lg:flex-row w-full px-5 lg:w-3/4 md:w-3/4  lg:gap-8'  >
+        <div className='flex flex-col  w-full lg:w-2/4 mb-10' >
+            <h1 className='Text pb-8 ' id='subHeading'>Know Our Story</h1>
+            <p className='Text  pb-6 BodyText ' style={{ textAlign: 'justify'}} > We're dedicated to bringing the beauty and tranquility of nature into your home with a carefully curated selection of plants. Packaged in eco-friendly materials and accompanied by expert care tips, our plants help you create a serene, nature-inspired space. Whether you're an experienced plant lover or just starting out, our diverse range ensures there's something perfect for every home and lifestyle. Let us guide you in choosing plants that enhance your environment and bring joy to your everyday life. </p>
             <Button  text="Know more"/>
         </div>
         <div className='flex flex-row gap-3 justify-between' style={{height:'328px'}}>

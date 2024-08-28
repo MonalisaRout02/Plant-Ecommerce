@@ -28,7 +28,7 @@ const TestimonialCard = ({ image, name, rating, text }) => {
     };
 
     return (
-        <div className='flex justify-center m-10 ' >
+        <div className=' testmonial card flex justify-center m-10 ' >
             <div className='flex flex-col p-3.5 rounded-lg' style={{ minWidth: '270px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
                 <div className='flex flex-row items-center'>
                     <img className='h-12 w-12 rounded-full' src={image} alt='pic' />
@@ -44,7 +44,7 @@ const TestimonialCard = ({ image, name, rating, text }) => {
                     <img src='./assets/Vector.svg' alt='quotes' className='ml-7  h-10 w-10' />
                 </div>
                 <div className='mt-3'>
-                    <p className='text-justify'>
+                    <p  className='BodyText'>
                         {text}
                     </p>
                 </div>

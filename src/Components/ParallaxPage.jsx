@@ -7,7 +7,7 @@ import ParallaxEndSection from './Member';
 export default function ParallaxPage() {
   return (
 
-      <Parallax className="parallax"pages={2    } style={{ width: '100%', height: '100vh',background: 'linear-gradient(to bottom, #1E3822, #498052)'}}>
+      <Parallax className="parallax"pages={2 } style={{ width: '100%', height: '100vh',background: 'linear-gradient(to bottom, #1E3822, #498052)'}}>
         <ParallaxLayer
           offset={1}
           speed={0}

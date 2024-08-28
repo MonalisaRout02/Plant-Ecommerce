@@ -19,8 +19,8 @@ const Featured = () => {
   ));
 
   const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
+    0: { items: 1.2 },
+    568: { items: 3 },
     1024: {
       items: 4.5,
       itemsFit: 'contain',
@@ -41,13 +41,13 @@ const Featured = () => {
 
   return (
     <div className='flex justify-center' style={{marginBottom:'150px'}}>
-      <div className='w-3/4'>
+      <div className=' lg:w-3/4 w-full px-5 md:w-3/4'>
         <div>
           <h4 className='Text' id='sideHeading'>Discover</h4>
           <h1 className='Text' id='subHeading'>Featured</h1>
         </div>
         <div>
-          <div className='relative pr-2 pl-4 mt-10'>
+          <div className='relative pr-2 pl-2 mt-10'>
             <AliceCarousel
               ref={carouselRef} 
               items={items}

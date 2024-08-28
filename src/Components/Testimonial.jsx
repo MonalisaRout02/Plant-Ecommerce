@@ -37,11 +37,37 @@ const Testimonial = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         beforeChange: (current, next) => setImageIndex(next),
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
     };
 
     return (
         <div className='lg:w-3/4 md:3/4 mx-auto relative' style={{marginBottom:'100px' }}>
-            <div><h4 className='Text text-center' id='sideHeading'>Transform</h4></div>
+            <div><h4 className='Text text-center' id='sideHeading'>Testimonial</h4></div>
             <div> <h1 className='Text my-4 text-center'id='subHeading'>What Our Client say</h1></div>
             <Slider {...settings}>
                 {testimonials.map((testimonial, idx) => (

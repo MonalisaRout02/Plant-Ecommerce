@@ -24,21 +24,21 @@ const testimonials = [
         "id": 4,
         "name": "David Garcia",
         "imgUrl": "./assets/Testimonial/4.svg",
-        "text": "My Aloe Vera plant arrived healthy and is growing nicely.",
+        "text": "My Aloe Vera plants arrived healthy and are growing nicely.",
         "rating": 4
     },
     {
         "id": 5,
         "name": "Emily Davis",
         "imgUrl": "./assets/Testimonial/5.svg",
-        "text": "I love my new Bamboo Palm. PetalNest never disappoints!",
+        "text": "I love my new Bamboo Palm, it's cute. PetalNest never disappoints!",
         "rating": 5
     },
     {
         "id": 6,
         "name": "Frank Harris",
         "imgUrl": "./assets/Testimonial/6.svg",
-        "text": "The Jade Plant from PetalNest is perfect for my office.",
+        "text": "The Jade Plant from PetalNest is so perfect for my office.",
         "rating": 4
     },
    

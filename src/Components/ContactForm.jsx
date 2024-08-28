@@ -43,10 +43,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="form-container" style={{ maxWidth: '500px', margin: '0 auto' }}>
+    <div className="form-container w-full mt-20" >
       <form onSubmit={handleSubmit} className="contact-form">
        
-          <input
+       <div className='flex  gap-2'>
+
+       <input
             type="text"
             name="name"
             value={formData.name}
@@ -69,6 +71,8 @@ const ContactForm = () => {
             autoComplete='off'
            
           />
+       </div>
+          
       
         
        
