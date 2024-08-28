@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Footer from '../Components/Footer'
 const AboutUs = () => {
   return (
     <div>
@@ -26,19 +26,39 @@ const AboutUs = () => {
         </div>
       </div>
       {/* why choose us */}
-      <div className='flex justify-center w-full' style={{backgroundColor:'rgba(30, 55, 34, 0.5)'}}>
+      <div className='flex justify-center w-full mb-20' style={{backgroundColor:'rgba(30, 55, 34, 0.5)'}}>
         
-            <div className='flex flex-row w-3/4 '> 
-                <img src="" alt=" " />
-                <div className='flex flex-col'>
-                  <p className='Text text-center' style={{fontSize:'16px', fontWeight:'600', color:'1E3722'}}>Fast Delivery</p>
+            <div className='flex flex-row w-3/4 py-10 justify-between'> 
+                
+                <div className='flex flex-col items-center'>
+                  <img className="w-[20%] h-[40%]" src="/assets/Abouts/Truck.svg" alt=" Truck" />
+                  <p className='Text text-center pt-3 pb-1' style={{fontSize:'16px', fontWeight:'600', color:'1E3722'}}>Fast Delivery</p>
                   <p className='Text text-center' >Free shipping over all orders</p>
+
+                </div>
+                <div className='flex flex-col items-center'>
+                  <img className="w-[20%] h-[40%]" src="/assets/Abouts/money.svg" alt=" Truck" />
+                  <p className='Text text-center pt-3 pb-1' style={{fontSize:'16px', fontWeight:'600', color:'1E3722'}}>Big Savings</p>
+                  <p className='Text text-center' >Buy more and save more</p>
+
+                </div>
+                <div className='flex flex-col items-center'>
+                  <img className="w-[20%] h-[40%]" src="/assets/Abouts/Discount.svg" alt=" Truck" />
+                  <p className='Text text-center pt-3 pb-1' style={{fontSize:'16px', fontWeight:'600', color:'1E3722'}}>Member Discount</p>
+                  <p className='Text text-center' >On every order above $130</p>
+
+                </div>
+                <div className='flex flex-col items-center'>
+                  <img className="w-[20%] h-[40%]" src="/assets/Abouts/support.svg" alt=" Truck" />
+                  <p className='Text text-center pt-3 pb-1' style={{fontSize:'16px', fontWeight:'600', color:'1E3722'}}>Customer Support</p>
+                  <p className='Text text-center' >24*7 support day and night</p>
 
                 </div>
             </div>
       </div>
       
       
+      <Footer />
 
     </div>
   )

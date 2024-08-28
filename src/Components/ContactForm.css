@@ -1,0 +1,48 @@
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dad9d9; /* Always apply the stroke color */
+    border-radius: px;
+    font-size: 16px;
+    outline: none;
+  
+  }
+  
+  .input-field {
+    flex: 1;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #498052;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #36643f;
+  }
+  

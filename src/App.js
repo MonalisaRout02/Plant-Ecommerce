@@ -11,7 +11,7 @@ import HomePage from './Pages/HomePage';
 
 function App() {
   return (
-    <div className='overflow-clip'>
+    <div >
      <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/services" element={<Shop />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
+      
      </BrowserRouter>
     </div>
   );
