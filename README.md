@@ -10,7 +10,6 @@ Welcome to the Plant E-Commerce Website! This is a frontend project built with R
 - **Parallax Scrolling**: Eye-catching parallax effects for the top section of the homepage.
 - **Testimonial Carousel**: 3D carousel featuring customer reviews.
 - **Confetti Effect**: Flower confetti effect with a membership pop-up for discounts and special offers.
-- **Magic Forest Reveal**: A transition that reveals a mystical forest theme as you scroll down the homepage.
 
 ## 🛠️ Tech Stack
 
