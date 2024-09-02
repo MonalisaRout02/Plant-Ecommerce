@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import products from '../Products/products'
+import products from '../Data/products'
 import FeaturedCard from './FeaturedCard'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css';

@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../Components/Footer';
+import Accordion from '../Components/Accordian';
 
 const AboutUs = () => {
   return (
@@ -149,6 +150,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
+      <Accordion />
+     
 
       <Footer />
     </div>

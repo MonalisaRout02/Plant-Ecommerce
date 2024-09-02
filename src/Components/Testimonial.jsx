@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import Slider from "react-slick";
 import TestimonialCard from './TestimonialCard';
-import testimonials from '../TestimonialData/TestimonialData';
+import testimonials from '../Data/TestimonialData';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {FaArrowRight, FaArrowLeft} from "react-icons/fa";
-import './Testimonial.css';
 
 const Testimonial = () => {
 

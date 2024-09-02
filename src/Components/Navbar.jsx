@@ -22,8 +22,8 @@ const Navbar = () => {
         <div className='w-1/4 flex flex-row justify-end'>
         <ul style={{ listStyleType: 'none', display: 'flex',  width: '55%', justifyContent: 'space-around',gap: '20px' }}>
                 <li onClick={() => handleNavigation('/cart')} style={{ cursor: 'pointer' }}><img src='/assets/Svg/Union.svg' alt='Logo'/></li>
-                <li onClick={() => handleNavigation('/cart')} style={{ cursor: 'pointer' }}><img src='/assets/Svg/ShoppingCart.svg' alt='Logo'/></li>
-                <li onClick={() => handleNavigation('/')} style={{ cursor: 'pointer' }}><img src='/assets/Svg/Account.svg' alt='Logo'/></li>
+                <li onClick={() => handleNavigation('/')} style={{ cursor: 'pointer' }}><img src='/assets/Svg/ShoppingCart.svg' alt='Logo'/></li>
+                <li onClick={() => handleNavigation('/Login')} style={{ cursor: 'pointer' }}><img src='/assets/Svg/Account.svg' alt='Logo'/></li>
               
             </ul>
         </div>

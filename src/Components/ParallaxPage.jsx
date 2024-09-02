@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import './ParallaxPage.css';
+
 import ParallaxEndSection from './Member';
 
 
