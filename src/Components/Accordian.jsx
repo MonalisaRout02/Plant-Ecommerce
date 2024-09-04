@@ -11,7 +11,7 @@ const Accordion = () => {
   return (
     <div className='flex justify-center my-20'>
         
-      <div className=' w-3/4'>
+      <div className=' w-3/4'> 
       <h2 className='Text'id='subHeading'>FAQ's</h2>
         {data && data.length > 0 ? (
           data.map(dataItem => (
