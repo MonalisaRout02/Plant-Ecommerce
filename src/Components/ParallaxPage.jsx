@@ -28,8 +28,8 @@ export default function ParallaxPage() {
           }}
         >
           <div  id="textBox">
-            <h1 class="Textparallax" id="Heading">Discover the Beauty of Nature at PetalNest  </h1>
-            <p  class="Text" id="description">At PetalNest, we offer a wide variety of plants, eco-friendly packaging, and expert care tips to help you create a tranquil and nature-inspired space in your home.</p>
+            <h1 className="Textparallax" id="Heading">Discover the Beauty of Nature at PetalNest  </h1>
+            <p  className="Text" id="description">At PetalNest, we offer a wide variety of plants, eco-friendly packaging, and expert care tips to help you create a tranquil and nature-inspired space in your home.</p>
           </div>
         </ParallaxLayer>
 
