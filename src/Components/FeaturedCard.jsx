@@ -1,17 +1,17 @@
 import React from 'react';
 import AddToCart from './AddToCart';
 
-const FeaturedCard = ({ ProductName, Price, imgUrl }) => {
+const FeaturedCard = ({ products }) => {
   return (
-    <div className='flex flex-col w-[13rem] shadow-lg p-2 ' style={{ minHeight: 'auto' }}> 
+    <div className='flex flex-col w-[13rem] h-[17rem] shadow-lg p-2 z-10 ' > 
       <div className='relative'>
-        <img src={imgUrl} alt={ProductName} className="w-full h-auto object-cover" /> 
+        <img src={products.imgUrl} alt={products.name} className="w-full h-full object-cover" /> 
         <AddToCart />
       </div>
       <div className='mt-2'> 
-        <p id='BodyText'>{ProductName}</p>
+        <p id='BodyText'>{products.name}</p>
         <div className='flex flex-row items-center'>
-          <p className='flex flex-grow' id='BoldBodyText'>{Price}</p>
+          <p className='flex flex-grow' id='BoldBodyText'>{products.price}</p>
           <img style={{ width: '7%' }} src="./assets/Arrow.svg" alt="Arrow" />
         </div>
       </div>

@@ -8,9 +8,9 @@ const useProducts = () => useContext(ProductContext);
 const InitialState = {
   products: [],
   category: [],
-  rating: 0,
-  price: 11750,
-  sort: " ",
+  rating: 3,
+  price: 0,
+  sort: "ascending",
 };
 const ProductProvider = ({ children }) => {
   const [state, dispatch] = useReducer(FilterReducer, InitialState);

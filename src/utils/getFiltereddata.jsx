@@ -1,11 +1,14 @@
 export const getFiltereddata =(state, products)=>{
+
+    console.log(state);
     const {category, rating, price, sort} = state;
 
     let sortedList = [...products];
     console.log("before-sort", sortedList);
-    // sorting the products either in ascending or descending ordeer
+    // // sorting the products either in ascending or descending ordeer
     if(sort === "ascending"){
-        sortedList.sort((a,b)=> a.price - b.price);
+        sortedList.sort((a,b)=> a.price - b.price );
+       
     }else if(sort === "descending"){
         sortedList.sort((a,b) => b.price - a.price );
     }
@@ -20,7 +23,8 @@ export const getFiltereddata =(state, products)=>{
     console.log("after filtering by category",category);
 
     // filter products by price
-    filteredData = [...filteredData.filter((item)=> products.price < price)];
+    filteredData = price ? [...filteredData.filter((item)=> item.price < price)]: [...filteredData];
+ 
     console.log("after filtering by price",filteredData);
 
     return [...filteredData];

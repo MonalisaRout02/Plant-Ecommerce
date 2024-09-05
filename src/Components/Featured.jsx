@@ -12,10 +12,7 @@ const Featured = () => {
   const items = products.map((product) => (
     <FeaturedCard
       key={product.id}
-      ProductName={product.name}
-      Price={product.price}
-      imgUrl={product.imgUrl}
-    />
+      products={product}/>
   ));
 
   const responsive = {
@@ -40,7 +37,7 @@ const Featured = () => {
   };
 
   return (
-    <div className='flex justify-center' style={{marginBottom:'150px'}}>
+    <div className='flex justify-center h-[18rem]' style={{marginBottom:'150px'}}>
       <div className=' lg:w-3/4 w-full px-5 md:w-3/4'>
         <div>
           <h4 className='Text' id='sideHeading'>Discover</h4>

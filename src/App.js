@@ -1,6 +1,6 @@
 
 import { BrowserRouter , Routes, Route} from 'react-router-dom';
-import React, { useEffect,useState } from "react";
+// import React, { useEffect,useState } from "react";
 import './App.css';
 // import HomePage from './Pages/HomePage';
 import AboutUsPage from './Pages/AboutUsPage';
