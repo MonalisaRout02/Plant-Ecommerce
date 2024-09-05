@@ -60,7 +60,7 @@ export const products = [
     price: 24.99,
     category: "Flowering Plants",
     imgUrl: "./assets/Products/3.png",
-    rating: 4.8,
+    rating: 3,
   },
   {
     _id: uuid(),
@@ -68,7 +68,7 @@ export const products = [
     price: 16.99,
     category: "Indoor Plants",
     imgUrl: "./assets/Products/4.png",
-    rating: 4.2,
+    rating: 2,
   },
   {
     _id: uuid(),
@@ -84,6 +84,6 @@ export const products = [
     price: 18.99,
     category: "Air-Purifying Plants",
     imgUrl: "./assets/Products/2.png",
-    rating: 4.5,
+    rating: 1,
   },
 ];

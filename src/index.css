@@ -242,3 +242,31 @@
     left: 10px;
   }
   
+
+  .slider {
+    -webkit-appearance: none; /* Override default styling */
+    width: 100%; /* Full-width slider */
+    height: 8px; /* Height of the slider track */
+    background: #ddd; /* Track color */
+    outline: none; /* Remove default outline */
+    border-radius: 5px; /* Rounded corners for the track */
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default thumb styling */
+    appearance: none;
+    width: 20px; /* Width of the thumb */
+    height: 20px; /* Height of the thumb */
+    background: #2e5637; /* Thumb color */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50%; /* Circular thumb */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px; /* Width of the thumb */
+    height: 20px; /* Height of the thumb */
+    background: #2e5637; /* Thumb color */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50%; /* Circular thumb */
+  }
+  
