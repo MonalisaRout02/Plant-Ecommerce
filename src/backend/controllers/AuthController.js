@@ -17,7 +17,9 @@ export const signupHandler = function (schema, request) {
   const { email, password, ...rest } = JSON.parse(request.requestBody);
   try {
     // check if email already exists
+    console.log(email, password);
     const foundUser = schema.users.findBy({ email });
+    console.log('Found user:', foundUser);
     if (foundUser) {
       return new Response(
         422,
@@ -38,8 +40,11 @@ export const signupHandler = function (schema, request) {
       cart: [],
       wishlist: [],
     };
+    console.log(newUser)
     const createdUser = schema.users.create(newUser);
+    console.log(createdUser);
     const encodedToken = sign({ _id, email }, process.env.REACT_APP_JWT_SECRET);
+
     return new Response(201, {}, { createdUser, encodedToken });
   } catch (error) {
     return new Response(

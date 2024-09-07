@@ -3,7 +3,7 @@ import Button from './Button'
 
 const AboutUs = () => {
   return (
-    <div className='flex justify-center '  style={{marginBottom:'155px'
+    <div className='flex justify-center '  style={{marginBottom:'180px',marginTop:'280px'
     }}>
       <div className='flex flex-col lg:flex-row w-full px-5 lg:w-3/4 md:w-3/4  lg:gap-8'  >
         <div className='flex flex-col  w-full lg:w-2/4 mb-10' >
