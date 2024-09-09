@@ -4,6 +4,7 @@ import { useProducts } from "../Context/ProductContext";
 
 import FeaturedCard from '../Components/FeaturedCard';
 import FilterBar from '../Components/FilterBar';
+import { Gif } from '@mui/icons-material';
 
 const ProductListing = () => {
     let FinalProduct = [];
@@ -30,13 +31,14 @@ const ProductListing = () => {
                 <div style={{ width: '25%', padding: '0 15px' }}>
                     <FilterBar />
                 </div>
+                
                 <div
-                    className="productsContainer grid grid-cols-4 gap-2"
+                    className="productsContainer grid grid-cols-4 gap-2 "
                     style={{
                         width: '70%',
                         minHeight: '100vh',
                         overflowY: 'auto',
-                        paddingBottom: '20px', // for spacing
+                        paddingBottom: '20px', 
                     }}
                 >
                     {FinalProduct.length > 0 ? (
@@ -44,7 +46,9 @@ const ProductListing = () => {
                             <FeaturedCard key={product.id} products={product} />
                         ))
                     ) : (
-                        <p>No products found</p>
+                        <div >
+                       <img src="./assets/Plant.gif" />
+                       </div>
                     )}
                 </div>
             </div>

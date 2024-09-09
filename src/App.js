@@ -9,6 +9,7 @@ import Shop from './Pages/Shop';
 import Navbar from './Components/Navbar';
 import HomePage from './Pages/HomePage';
 import Login from './Components/Login';
+import Cart from './Pages/CartPage';
 import ParallaxEndSection from './Components/Member';
 
 
@@ -20,7 +21,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        
+        <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<ContactUs />} />
