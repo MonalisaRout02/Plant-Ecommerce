@@ -1,9 +1,10 @@
 import React from 'react';
 import ContactForm from '../Components/ContactForm';
-
+import Navbar from '../Components/Navbar';
 const ContactUs = () => {
   return (
     <div>
+      <Navbar/>
       <div
         className='Contact-us-top flex flex-row justify-between lg:h-[30%] overflow-clip'
         style={{ width: '100%', background: 'linear-gradient(to bottom, #1E3822, #498052)' }}

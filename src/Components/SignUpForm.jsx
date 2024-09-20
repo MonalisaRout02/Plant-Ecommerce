@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Ensure axios is installed and imported for making HTTP requests
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 const SignUpForm = () => {
   const navigate = useNavigate();
   const [signUpData, setSignUpData] = useState({
@@ -32,10 +34,10 @@ const SignUpForm = () => {
       // Save the JWT token in localStorage
       localStorage.setItem('token', response.data.encodedToken);
       console.log('Response:', response);
-      console.log('Token:', response.data.encodedToken);
+      console.log('Token is:', response.data.encodedToken);
       console.log('Sign-up successful!');
-      // Redirect or show a success message as needed
-      navigate('/home');
+      toast("SignUp Successfull!");
+      navigate('/');
 
 
     } catch (error) {
@@ -46,6 +48,7 @@ const SignUpForm = () => {
 
   return (
     <div>
+    
       <form className='login-form flex flex-col gap-2' onSubmit={handleSubmit}>
         <div>
           <label className='BodyText'>Name</label>
@@ -83,7 +86,7 @@ const SignUpForm = () => {
           />
         </div>
 
-        <div className='flex justify-center mt-10'>
+        <div className='flex justify-center'>
           <button type="submit" className="submit-button" style={{ width: '160px', padding: '10px 20px' }}>
             Get Started
           </button>

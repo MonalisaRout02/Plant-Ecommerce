@@ -6,7 +6,7 @@ import AboutUs from '../Components/AboutUs'
 import Transform from '../Components/Transform'
 import IndoorPlants from '../Components/IndoorPlants'
 import Footer from '../Components/Footer'
-
+import Navbar from '../Components/Navbar'
 import Testimonial from '../Components/Testimonial'
 
 import ParallaxPage from '../Components/ParallaxPage'
@@ -14,6 +14,7 @@ import ParallaxPage from '../Components/ParallaxPage'
 const HomePage = () => {
   return (
     <div>
+    <Navbar/>
     <ParallaxPage />
     <div style={{position:'relative',top:'110vh'}}>
       

@@ -1,10 +1,12 @@
 import React from 'react';
 import Footer from '../Components/Footer';
 import Accordion from '../Components/Accordian';
+import Navbar from '../Components/Navbar';
 
 const AboutUs = () => {
   return (
     <div>
+      <Navbar />
       {/* About us top part */}
       <div
         className='About-us-top flex flex-col lg:flex-row justify-between lg:h-[30%] overflow-hidden'

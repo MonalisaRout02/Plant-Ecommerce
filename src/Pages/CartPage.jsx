@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { useCart } from '../Context/CartContext'
 import Cartpagecard from '../Components/Cartpagecard';
+import Navbar from '../Components/Navbar';
 const Cart = () => {
 
   const { state } = useCart();
@@ -17,7 +18,9 @@ const Cart = () => {
 
 
   return (
-    <div className='w-full flex justify-center align-middle my-20' >
+    <div>
+      <Navbar/>
+      <div className='w-full flex justify-center align-middle my-20' >
     <div className=' w-[70%]'>
       {!cartItemState && (
                   <div className='flex justify-center mt-20'>
@@ -35,6 +38,8 @@ const Cart = () => {
       </div>
     </div>
     </div>
+    </div>
+    
   )
 }
 

@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { getFiltereddata } from '../utils/getFiltereddata';
 import { useProducts } from "../Context/ProductContext";
-
 import FeaturedCard from '../Components/FeaturedCard';
 import FilterBar from '../Components/FilterBar';
-import { Gif } from '@mui/icons-material';
 
 const ProductListing = () => {
-    let FinalProduct = [];
-
     const [products, setProducts] = useState([]);
     const { state } = useProducts();
 
@@ -21,34 +17,24 @@ const ProductListing = () => {
         getData();
     }, []);
 
-    if (products.length > 0) {
-        FinalProduct = getFiltereddata(state, products);
-    }
+    const FinalProduct = products.length > 0 ? getFiltereddata(state, products) : [];
 
     return (
-        <div style={{ height: '100%', overflow: 'auto' }}>
-            <div className="flex flex-row gap-10 mt-20" style={{ height: '100%' }}>
-                <div style={{ width: '25%', padding: '0 15px' }}>
+        <div className="flex flex-col h-full overflow-auto">
+            <div className="flex flex-col md:flex-row gap-10 mt-20">
+                <div className="w-full md:w-1/4 p-4">
                     <FilterBar />
                 </div>
-                
-                <div
-                    className="productsContainer grid grid-cols-4 gap-2 "
-                    style={{
-                        width: '70%',
-                        minHeight: '100vh',
-                        overflowY: 'auto',
-                        paddingBottom: '20px', 
-                    }}
-                >
+
+                <div className="productsContainer grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-full p-4">
                     {FinalProduct.length > 0 ? (
                         FinalProduct.map((product) => (
                             <FeaturedCard key={product.id} products={product} />
                         ))
                     ) : (
-                        <div >
-                       <img src="./assets/Plant.gif" />
-                       </div>
+                        <div className="flex justify-center items-center w-full h-full">
+                            <img src="./assets/Plant.gif" alt="Loading..." className="w-1/2" />
+                        </div>
                     )}
                 </div>
             </div>

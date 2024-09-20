@@ -16,7 +16,7 @@ export default function ParallaxPage() {
         
         {/* Text Box Layer */}
         <ParallaxLayer 
-    
+         
           offset={0.1}  
           speed={-0.4}
           style={{

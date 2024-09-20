@@ -178,31 +178,65 @@
   }
 
   /* Parallax page */
-
-  #textBox{
+  #textBox {
     width: 50%;
     padding: 20px;
     text-align: center;
     position: absolute; 
     top: 20%; 
     left: 50%; 
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #textBox {
+        width: 91%; /* Adjust width to 70% for smaller screens */
+      
+    }
+}
+
 .Textparallax{
     color:white;
     font-weight: 500;
     
 }
-#Heading{
-    font-size: 45px;
-    padding: 0px 10px 0 10px; 
-
+#Heading {
+  font-size: 45px;
+  padding: 0px 10px; 
 }
 #description{
-    /* padding-top:16px; */
-    padding: 16px 40px 0 40px; 
-    color: white;
+  /* padding-top:16px; */
+  padding: 16px 40px 0 40px; 
+  color: white;
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #Heading {
+      font-size: 32px; /* Adjust the font size for smaller screens */
+      padding: 0px 0px; 
+  }
+  #description{
+    padding: 10px 20px 0 20px; 
+  }
+  #sideHeading{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  #Heading {
+      font-size: 30px; /* Further adjust for extra small screens */
+      padding: 0px 0px; 
+  }#description{
+    padding: 10px 10px 0 10px; 
+  }#sideHeading{
+    font-size: 26px;
+  }
+}
+
 
 /* Testimonial Section */
 
