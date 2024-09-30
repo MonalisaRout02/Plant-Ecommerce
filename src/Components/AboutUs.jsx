@@ -12,14 +12,14 @@ const AboutUs = () => {
             <Button  text="Know more"/>
         </div>
         <div className='flex flex-row gap-3 justify-between' style={{height:'328px'}}>
-            <div style={{height:'328px'}}><img style={{height:'328px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/First.svg" alt="know us"/></div>
+            <div style={{height:'328px'}}><img style={{height:'328px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/First.webp" alt="know us"/></div>
             <div className='flex flex-col justify-between' style={{height:'328px'}}>
-                <img style={{height:'220px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Sec1.svg"alt="know us"/>
-                <img style={{height:'100px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Sec2.svg"alt="know us"/>
+                <img style={{height:'220px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Sec1.webp"alt="know us"/>
+                <img style={{height:'100px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Sec2.webp"alt="know us"/>
             </div>
             <div className='flex flex-col justify-between' style={{height:'328px',  borderRadius:'18px'}}>
-                <img  style={{height:'100px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Third1.svg"  alt="know us"/>
-                <img style={{height:'220px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Third2.svg"   alt="know us"/>
+                <img  style={{height:'100px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Third1.webp"  alt="know us"/>
+                <img style={{height:'220px', objectFit:'cover', borderRadius:'18px'}} src="./assets/KnowUs/Third2.webp"   alt="know us"/>
             </div>
         
         </div>

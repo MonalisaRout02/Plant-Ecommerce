@@ -68,7 +68,7 @@ const Login = () => {
                 borderTopLeftRadius: '0.5rem',
                 borderBottomLeftRadius: '0.5rem',
               }}
-              src="/assets/Login.png" alt="login" />
+              src="/assets/Login.WebP" alt="login" />
             <div className='flex flex-col w-1/2 p-12 '>
           
               {isLogIn ? <h2 className='Text mb-5' id='subHeading'>Login</h2> :

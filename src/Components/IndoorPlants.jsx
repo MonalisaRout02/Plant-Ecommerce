@@ -33,7 +33,7 @@ const IndoorPlants = () => {
                   >
                     <img
                       className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:filter" // Ensures the image takes up the full space
-                      src="./assets/Indoor/2.jpg"
+                      src="./assets/Indoor/2.webp"
                       alt="indoorplants"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-start text-white opacity-100 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
@@ -53,7 +53,7 @@ const IndoorPlants = () => {
                   >
                     <img
                       className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:filter" // Ensures the image takes up the full space
-                      src="./assets/Indoor/1.jpg"
+                      src="./assets/Indoor/1.webp"
                       alt="indoorplants"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-start text-white opacity-100 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
@@ -96,7 +96,7 @@ const IndoorPlants = () => {
                   >
                     <img
                       className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:filter" 
-                      src="./assets/Indoor/3.jpg"
+                      src="./assets/Indoor/3.webp"
                       alt="indoorplants"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-start text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
@@ -117,7 +117,7 @@ const IndoorPlants = () => {
                   >
                     <img
                       className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:filter" // Ensures the image takes up the full space
-                      src="./assets/Indoor/4.jpg"
+                      src="./assets/Indoor/4.webp"
                       alt="indoorplants"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-start text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
